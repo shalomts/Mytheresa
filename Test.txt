@@ -1,1 +1,63 @@
 QA Challenge from Shalom Tsur
+
+  Section One
+  
+1- How do you deal with flaky tests?
+
+1.1 - Rerun Test
+1.2 - Test Quarantine
+1.3 - Investing test results
+1.4 - Minimize test order dependency
+1.5 - Avoid asynchronous waits by watching for timeouts and delays when loading data
+
+
+2- Let's suppose there is a test pipeline taking about 1 hour to finish, what would you
+do to decrease the time of it?
+
+2.1 - Exhaustive testing. To prevent this type of waste  
+2.2 - Unnecessary manual testing.
+2.3 - Divide your test cases on different Category. 
+This enables you to run enormous number of tests, every day. Instead of 1 or 2 use tens or even hundreds.
+2.4 - Keep it simple
+2.5 - Run the high priority tests first and if time permits, take up the other tests. 
+Another approach- data combination techniques for test design such as "Classification Tree Method, Decision Table etc.
+
+
+3- Imagine you have the possibility to ask software engineers to develop tools for you that will increase your productivity as full-stack QA, 
+please describe to them your requirements
+
+
+
+
+	Section two
+
+Test Plan Login Page: 
+	
+	Functional Test Cases:
+Functional Test Cases	Type- Unhappy Flow/ Happy Flow Test Case
+
+1	Verify if a user will be able to login with a valid username and valid password.	(Happy Flow)
+2	Verify if a user cannot login with a valid username and an invalid password.	(Unhappy Flow)
+3	Verify the login page when the field is blank and Submit button is grayed out (Happy Flow)
+4	Verify the ‘Forgot Password’ functionality is clickable	(Happy Flow)
+5	Verify the messages for invalid login.	(Happy Flow)
+6	Verify if the login page allows to log in simultaneously with different credentials in a different browser.	(Happy Flow)
+7	Verify if the ‘Enter’ key of the keyboard is working correctly on the login page.	(Happy Flow)
+
+Other Test Cases
+
+8	Verify if the font, text color, and color coding of the Login page is as per the standard.	(UI Testing- Happy Flow Testing)
+9	Verify if there is a ‘Cancel’ button available to erase the entered text.	(Usability Testing)
+10	Verify Login credentials in UPPER case should not be treated as invalid (Happy Flow)
+
+
+Non-functional Security Test Cases- Unhappy Flow/ Happy Flow Test Case
+
+1	Verify if a user cannot enter the characters more than the specified range in each field (Username and Password - Unhappy Flow)
+2	Verify if a user cannot enter special characters such as %$#@ or use different languages than the specified in  field (Username and Password - Happy Flow)
+3	Verify the login page by pressing ‘Back button’ of the browser. It should not allow you to enter into the system once you log out.	(Unhappy Flow)
+4	Verify the timeout functionality of the login session.	Happy Flow
+5	Verify if a user should not be allowed to log in with different credentials from the same browser at the same time.	(Unhappy Flow)
+6	Verify if a user should be able to login with the same credentials in different browsers at the same time.	(Happy Flow)
+7	Verify the Login page against SQL injection attack.	(Unhappy Flow)
+8	Verify Users should not be allowed to copy and paste Password from text box 
