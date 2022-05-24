@@ -26,10 +26,17 @@ Another approach- data combination techniques for test design such as "Classific
 3- Imagine you have the possibility to ask software engineers to develop tools for you that will increase your productivity as full-stack QA, 
 please describe to them your requirements
 
-
+3.1 - Continuously refactor code and write code documentation
+3.2 - UI\UX for Testers that it is easy to use without any code involved in so also without any knowledge can work with it
+3.3 - Error endling tool combained inside the product 
+3.4 - Log viewer that is Divided into easy-to-use categories and uncomplicated filters
 
 
 	Section two
+	
+1 - In this section I am going to focus on user login tests (positive and negative) and in addition I will combine compatibility for different operating systems and browsers
+2 - I will be Using automation for the parts of the functional tests to makes sure that they are Covered, in order to save me valuable time and focus on the more problematic parts.
+
 
 Test Plan Login Page: 
 	
